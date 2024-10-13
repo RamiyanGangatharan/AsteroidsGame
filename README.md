@@ -14,6 +14,12 @@
 ## Overview
 This project is a remake of the classic **Asteroids** game, built using **Unity**. The goal is to explore game development, improve C# proficiency, and gain hands-on experience with Unity's 2D physics and game engine mechanics. This project is an ongoing learning experience, with plans for continuous updates and improvements.
 
+## Getting Started
+**Clone the repository**:
+   ```bash 
+   git clone https://github.com/RamiyanGangatharan/AsteroidsGame.git
+```
+
 ## Current Features
 - **Player Movement**: 
    - [W] for thrust
@@ -78,11 +84,6 @@ This project is a remake of the classic **Asteroids** game, built using **Unity*
 - Unity **2022.3.50f1** or higher (project migrated from an earlier version)
 - TextMeshPro package (included in Unity's Package Manager)
 
-## Getting Started
-**Clone the repository**:
-   ```bash 
-   git clone https://github.com/RamiyanGangatharan/AsteroidsGame.git
-```
 ---
 
 ## Development Log
