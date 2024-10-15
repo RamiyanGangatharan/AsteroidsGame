@@ -36,6 +36,9 @@ This project is a remake of the classic **Asteroids** game, built using **Unity*
 
 ## Development Log
 
+### October 15 2024 - October 18 2024: Planning Phase
+The last log was what I call a "feasability demo" where I wanted to see (by coding the core functions) how doable it is as a solo developer. After that demo, I think I am able to do it by myself, to challenge myself into learning something new. I will update this log with proper planning documents later on.
+ 
 ### October 12 2024 - October 13 2024: Learning and Refactoring
 I deleted unnecessary files to clean up the project and refactored the initial codebase after studying Unity’s 2D physics system. Following this, I created a basic player model by attaching a RigidBody2D for physics, a collider for interactions, and a LineRenderer to enhance the ship's visual appearance. To prevent the ship from falling out of the camera view, I implemented colliders as boundaries. Additionally, I rewrote the core movement logic, relying on Unity documentation rather than tutorials.
 
