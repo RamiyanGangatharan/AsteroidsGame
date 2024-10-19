@@ -54,6 +54,13 @@ when I coded things and had to break the habit of doing that. I started with cre
 object and to assign variables to it. After that I created the Projectile Graphic where I just draw a tapered line (thick to thin)
 and made it dissapear and to look like it was decaying in 1 second after firing to improve performance.
 
+
+##### ISSUES:
+- Asteroids spawning but not within bounds of camera
+- Asteroids not disappearing (for now up until I figure out code to split them)
+	- Bullets hitting asteroids out of bounds becuase of the out of bounds asteroids
+	- Bullets are still existing out of bounds
+
 ### October 15 2024 - October 18 2024: Planning Phase
 The last log was what I call a "feasability demo" where I wanted to see (by coding the core functions) how doable it is as a solo developer. After that demo, I think I am able to do it by myself, to challenge myself into learning something new. I will update this log with proper planning documents later on.
  

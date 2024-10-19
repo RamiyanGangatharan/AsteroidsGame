@@ -5,10 +5,10 @@ public class BoundaryController : MonoBehaviour
     public GameObject playerShip;
 
     // Boundary limits for the player's movement
-    private float minimum_X;
-    private float maximum_X;
-    private float minimum_Y;
-    private float maximum_Y;
+    public float minimum_X;
+    public float maximum_X;
+    public float minimum_Y;
+    public float maximum_Y;
 
     /**
      * The Start method initializes the boundary limits based on the main camera's viewport and ensures
