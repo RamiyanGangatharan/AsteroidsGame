@@ -6,7 +6,7 @@ public class ProjectileGraphic : MonoBehaviour
     private readonly float scaleFactor = 0.05f;
 
     float WIDTH = 0.1f;
-    int VERTICIES = 2;
+    int VERTICES = 2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +25,7 @@ public class ProjectileGraphic : MonoBehaviour
         lineRenderer.endColor = new Color(0, 1, 1, 0);                    // Set the end color to fade to transparent.
         lineRenderer.startWidth = WIDTH;                                  // Set the starting width of the line.
         lineRenderer.endWidth = WIDTH * 0.5f;                             // Set the ending width of the line then taper it.
-        lineRenderer.positionCount = VERTICIES;                           // Set the number of vertices in the LineRenderer.
+        lineRenderer.positionCount = VERTICES;                            // Set the number of vertices in the LineRenderer.
 
         // Define the positions of the projectile graphic in local space.
         lineRenderer.SetPosition(0, startPoint);

@@ -6,7 +6,7 @@ public class ShipGraphic : MonoBehaviour
     private readonly float scaleFactor = 0.5f;
 
     float WIDTH = 0.05f;
-    int VERTICIES = 4;
+    int VERTICES = 4;
 
 
     /**
@@ -38,7 +38,7 @@ public class ShipGraphic : MonoBehaviour
         lineRenderer.endColor = Color.white;                              // Set the end color of the line to white.
         lineRenderer.startWidth = WIDTH;                                  // Set the starting width of the line.
         lineRenderer.endWidth = WIDTH;                                    // Set the ending width of the line.
-        lineRenderer.positionCount = VERTICIES;                           // Set the number of vertices in the LineRenderer.
+        lineRenderer.positionCount = VERTICES;                            // Set the number of vertices in the LineRenderer.
 
         // Define the positions of the ship graphic in local space.
         lineRenderer.SetPosition(0, top);                           
