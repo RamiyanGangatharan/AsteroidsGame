@@ -8,6 +8,7 @@ public class ShipGraphic : MonoBehaviour
     float WIDTH = 0.05f;
     int VERTICIES = 4;
 
+
     /**
      * The Start method is called before the first frame update. It initializes the LineRenderer component, which is
      * responsible for rendering the visual representation of the ship. If a LineRenderer is not already attached to 
@@ -23,6 +24,12 @@ public class ShipGraphic : MonoBehaviour
     {
         lineRenderer = gameObject.GetComponent<LineRenderer>();
 
+        // Vectors for the player (Triangle)
+        Vector3 top = new Vector3(0, 1 * scaleFactor, 0);
+        Vector3 bottomLeft = new Vector3(-scaleFactor * scaleFactor, -1 * scaleFactor, 0);
+        Vector3 bottomRight = new Vector3(scaleFactor * scaleFactor, -1 * scaleFactor, 0);
+        Vector3 close = new Vector3(0, 1 * scaleFactor, 0);
+
         if (lineRenderer == null) { lineRenderer = gameObject.AddComponent<LineRenderer>(); }
 
         lineRenderer.useWorldSpace = false;                               // Use local space for the line positions.
@@ -34,9 +41,9 @@ public class ShipGraphic : MonoBehaviour
         lineRenderer.positionCount = VERTICIES;                           // Set the number of vertices in the LineRenderer.
 
         // Define the positions of the ship graphic in local space.
-        lineRenderer.SetPosition(0, new Vector3(0, 1 * scaleFactor, 0));                           // Top point of the ship.
-        lineRenderer.SetPosition(1, new Vector3(-scaleFactor * scaleFactor, -1 * scaleFactor, 0)); // Bottom left point.
-        lineRenderer.SetPosition(2, new Vector3(scaleFactor * scaleFactor, -1 * scaleFactor, 0));  // Bottom right point.
-        lineRenderer.SetPosition(3, new Vector3(0, 1 * scaleFactor, 0));                           // Close shape at top.
+        lineRenderer.SetPosition(0, top);                           
+        lineRenderer.SetPosition(1, bottomLeft); 
+        lineRenderer.SetPosition(2, bottomRight);  
+        lineRenderer.SetPosition(3, close);                           
     }
 }
