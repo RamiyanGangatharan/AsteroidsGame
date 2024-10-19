@@ -9,6 +9,7 @@ public class MainManu : MonoBehaviour
 
     void Start()
     {
+        Camera.main.backgroundColor = Color.black;
         PlayButton.onClick.AddListener(playGame);
         ExitButton.onClick.AddListener(exitApp);
     }
