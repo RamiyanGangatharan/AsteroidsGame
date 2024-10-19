@@ -52,8 +52,8 @@ public class BoundaryController : MonoBehaviour
         {
             Rigidbody2D rb = playerShip.GetComponent<Rigidbody2D>();
             Vector2 normal = collision.contacts[0].normal; // Get the normal of the collision
-            Vector2 reflectedVelocity = Vector2.Reflect(rb.velocity, normal); // Reflect the velocity based on the normal
-            rb.velocity = reflectedVelocity; // Apply the reflected velocity
+            Vector2 reflectedVelocity = Vector2.Reflect(rb.linearVelocity, normal); // Reflect the velocity based on the normal
+            rb.linearVelocity = reflectedVelocity; // Apply the reflected velocity
         }
     }
 }
