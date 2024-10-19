@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
     public TMP_Text ScoreText;
     public TMP_Text LivesText;
 
-    Vector3 centerScreen = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.nearClipPlane));
-
     /**
      * The Start method initializes the game scene and sets up key game elements. It configures the camera's 
      * background color to black, and if the playerShip GameObject does not exist, it instantiates one at 
@@ -25,13 +23,28 @@ public class GameManager : MonoBehaviour
     {
         Camera.main.backgroundColor = Color.black;
 
-        if (playerShip == null) { playerShip = Instantiate(playerShipPrefab, Vector3.zero, Quaternion.identity); }
+        if (playerShip == null)
+        {
+            playerShip = Instantiate(playerShipPrefab, Vector3.zero, Quaternion.identity);
+        }
 
-        if (ScoreText != null) { ScoreText.text = "Score: " + score.ToString(); }
-        else { Debug.LogError("ScoreText is not assigned in the Inspector!"); }
+        if (ScoreText != null)
+        {
+            ScoreText.text = "Score: " + score.ToString();
+        }
+        else
+        {
+            Debug.LogError("ScoreText is not assigned in the Inspector!");
+        }
 
-        if (LivesText != null) { LivesText.text = "Lives: " + playerLives.ToString(); }
-        else { Debug.LogError("LivesText is not assigned in the Inspector!"); }
+        if (LivesText != null)
+        {
+            LivesText.text = "Lives: " + playerLives.ToString();
+        }
+        else
+        {
+            Debug.LogError("LivesText is not assigned in the Inspector!");
+        }
     }
 
     /**
@@ -43,10 +56,12 @@ public class GameManager : MonoBehaviour
      */
     private void Update()
     {
-        Rigidbody2D rigidBody = playerShip.GetComponent<Rigidbody2D>();
-
+        // Check if the 'R' key is pressed and playerShip is assigned
         if (Input.GetKeyDown(KeyCode.R) && playerShip != null)
         {
+            Rigidbody2D rigidBody = playerShip.GetComponent<Rigidbody2D>();
+
+            Vector3 centerScreen = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.nearClipPlane));
             playerShip.transform.position = new Vector3(centerScreen.x, centerScreen.y, 0);
             playerShip.transform.rotation = Quaternion.identity;
 
@@ -56,6 +71,9 @@ public class GameManager : MonoBehaviour
                 rigidBody.angularVelocity = 0f;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.R)) { Debug.LogError("PlayerShip GameObject is not assigned!"); }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.LogError("PlayerShip GameObject is not assigned!");
+        }
     }
 }
