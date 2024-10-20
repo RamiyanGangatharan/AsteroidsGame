@@ -47,6 +47,7 @@ mechanics. This project is an ongoing learning experience, with plans for contin
         - **Note:** No recoil, as it reduces gameplay fun
 
 ***NOTE: I updated Unity Engine to version 6***
+
 Implementing projectiles in the game helped me learn how to load and unload objects using `Destroy()`. I realized I was 
 coding redundantly and had to break this habit. I started by creating a `Projectile` class to manage object creation and 
 variable assignment. Afterward, I designed the projectile graphic—a tapered line (thick to thin) — and made it disappear, 
