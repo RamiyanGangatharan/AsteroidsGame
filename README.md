@@ -23,14 +23,14 @@ mechanics. This project is an ongoing learning experience, with plans for contin
 ```
 
 ## Requirements
-- Unity **2022.3.50f1** or higher (project migrated from an earlier version)
+- Unity 6 or higher (project migrated from an earlier version)
 - TextMeshPro package (included in Unity's Package Manager)
 
 ## Current Features
 - **Player Movement**: 
-   - [W] for thrust
-   - [Q] to rotate clockwise
-   - [E] to rotate counterclockwise
+   - `[W]` for thrust
+   - `[Q]` to rotate clockwise
+   - `[E]` to rotate counterclockwise
 - **Basic Physics**: Ship uses Unity's 2D physics engine with a rigid body and colliders.
 - **UI Placeholders**: TextMeshPro placeholders for displaying score and lives.
 - **Shooting Mechanics**: Implemented a basic shooting system to look like a laser cannon on the ship
@@ -42,10 +42,11 @@ mechanics. This project is an ongoing learning experience, with plans for contin
 #### Main Objectives:
 - Implement the shooting mechanic for the player
     - Colliders
-    - SPACEBAR to shoot
+    - `SPACEBAR` to shoot
     - Physics for correct velocity and mass when fired
         - **Note:** No recoil, as it reduces gameplay fun
 
+***NOTE: I updated Unity Engine to version 6***
 Implementing projectiles in the game helped me learn how to load and unload objects using `Destroy()`. I realized I was 
 coding redundantly and had to break this habit. I started by creating a `Projectile` class to manage object creation and 
 variable assignment. Afterward, I designed the projectile graphic—a tapered line (thick to thin) — and made it disappear, 
@@ -54,7 +55,7 @@ simulating decay after 1 second to improve performance.
 ---
 
 ### October 15 - October 18, 2024: Planning Phase
-The previous log was a "feasibility demo," where I coded core functions to determine if I could handle the project solo. 
+The previous log was a "feasibility demo", where I coded core functions to determine if I could handle the project solo. 
 Based on the demo, I believe I can manage it on my own, challenging myself to learn something new. I will add proper 
 planning documents later.
 
