@@ -41,9 +41,9 @@ public class ShipGraphic : MonoBehaviour
         lineRenderer.positionCount = VERTICES;                            // Set the number of vertices in the LineRenderer.
 
         // Define the positions of the ship graphic in local space.
-        lineRenderer.SetPosition(0, top);                           
-        lineRenderer.SetPosition(1, bottomLeft); 
-        lineRenderer.SetPosition(2, bottomRight);  
-        lineRenderer.SetPosition(3, close);                           
+        lineRenderer.SetPosition(0, top);
+        lineRenderer.SetPosition(1, bottomLeft);
+        lineRenderer.SetPosition(2, bottomRight);
+        lineRenderer.SetPosition(3, close);
     }
 }

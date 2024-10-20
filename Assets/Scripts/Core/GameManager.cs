@@ -23,28 +23,13 @@ public class GameManager : MonoBehaviour
     {
         Camera.main.backgroundColor = Color.black;
 
-        if (playerShip == null)
-        {
-            playerShip = Instantiate(playerShipPrefab, Vector3.zero, Quaternion.identity);
-        }
+        if (playerShip == null) { playerShip = Instantiate(playerShipPrefab, Vector3.zero, Quaternion.identity); }
 
-        if (ScoreText != null)
-        {
-            ScoreText.text = "Score: " + score.ToString();
-        }
-        else
-        {
-            Debug.LogError("ScoreText is not assigned in the Inspector!");
-        }
+        if (ScoreText != null) { ScoreText.text = "Score: " + score.ToString(); }
+        else { Debug.LogError("ScoreText is not assigned in the Inspector!");}
 
-        if (LivesText != null)
-        {
-            LivesText.text = "Lives: " + playerLives.ToString();
-        }
-        else
-        {
-            Debug.LogError("LivesText is not assigned in the Inspector!");
-        }
+        if (LivesText != null) { LivesText.text = "Lives: " + playerLives.ToString(); }
+        else { Debug.LogError("LivesText is not assigned in the Inspector!"); }
     }
 
     /**
@@ -71,9 +56,6 @@ public class GameManager : MonoBehaviour
                 rigidBody.angularVelocity = 0f;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.LogError("PlayerShip GameObject is not assigned!");
-        }
+        else if (Input.GetKeyDown(KeyCode.R)) { Debug.LogError("PlayerShip GameObject is not assigned!"); }
     }
 }
