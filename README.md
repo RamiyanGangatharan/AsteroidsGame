@@ -34,6 +34,9 @@ mechanics. This project is an ongoing learning experience, with plans for contin
 - **Basic Physics**: Ship uses Unity's 2D physics engine with a rigid body and colliders.
 - **UI Placeholders**: TextMeshPro placeholders for displaying score and lives.
 - **Shooting Mechanics**: Implemented a basic shooting system to look like a laser cannon on the ship
+
+## Current File Summary
+- BoundaryController.cs
 ---
 
 # Development Log
