@@ -35,8 +35,24 @@ mechanics. This project is an ongoing learning experience, with plans for contin
 - **UI Placeholders**: TextMeshPro placeholders for displaying score and lives.
 - **Shooting Mechanics**: Implemented a basic shooting system to look like a laser cannon on the ship
 
-## Current File Summary
-- BoundaryController.cs
+## Current File Directory
+- **Assets**
+    - **Scripts**
+        - **Core**
+            - BoundaryController.cs
+            - GameManager.cs
+            - MainMenu.cs
+            - PlayerManager.cs
+        - **Player**
+            - PlayerMovement.cs
+            - PlayerShip.cs
+            - PlayerShooting.cs
+            - PlayerGraphic.cs
+        - **Projectile**
+            - Projectile.cs
+            - ProjectileGraphic.cs
+- **TextMeshPro**
+
 ---
 
 # Development Log
