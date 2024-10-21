@@ -315,7 +315,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -397,22 +396,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d8f3b6c731b4c343a3c7256cbe050cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerShip: {fileID: 2140992546}
-  playerShipPrefab: {fileID: 5676240858257407678, guid: 74a85f2272a2e9d45b26f1a3a2dc5718, type: 3}
-  ScoreText: {fileID: 0}
-  LivesText: {fileID: 0}
 --- !u!1 &844984142
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,10 +732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8f3b6c731b4c343a3c7256cbe050cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerShip: {fileID: 2140992546}
-  playerShipPrefab: {fileID: 5676240858257407678, guid: 74a85f2272a2e9d45b26f1a3a2dc5718, type: 3}
-  ScoreText: {fileID: 355227744}
-  LivesText: {fileID: 844984144}
 --- !u!4 &1712930164
 Transform:
   m_ObjectHideFlags: 0
@@ -773,6 +752,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5676240858257407678, guid: 74a85f2272a2e9d45b26f1a3a2dc5718, type: 3}
   m_PrefabInstance: {fileID: 7568658162836978822}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140992553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140992546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52aae414015f4341bef53d3148dbc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerShipPrefab: {fileID: 5676240858257407678, guid: 74a85f2272a2e9d45b26f1a3a2dc5718, type: 3}
 --- !u!1001 &7568658162836978822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -976,7 +968,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5676240858257407678, guid: 74a85f2272a2e9d45b26f1a3a2dc5718, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2140992553}
   m_SourcePrefab: {fileID: 100100000, guid: 74a85f2272a2e9d45b26f1a3a2dc5718, type: 3}
 --- !u!1001 &7648536513360111021
 PrefabInstance:
