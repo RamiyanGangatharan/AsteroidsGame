@@ -2,17 +2,26 @@
 
 public class AsteroidHandler : MonoBehaviour
 {
-    public GameObject projectilePrefab;
     public GameObject asteroidPrefab;
+    public GameObject projectilePrefab;
     public GameObject playerShip;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Asteroid")) { HandleCollision(collision, collision.gameObject); }
-        if (collision.gameObject.CompareTag("Player")) { HandleCollision(collision, collision.gameObject); }
+        // Compare by tag instead of direct object reference
+        if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            HandleCollision(collision, collision.gameObject);
+        }
+
         if (collision.gameObject.CompareTag("Projectile"))
         {
             SplitAsteroid(collision.gameObject);
+            HandleCollision(collision, collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
             HandleCollision(collision, collision.gameObject);
         }
     }
@@ -28,27 +37,39 @@ public class AsteroidHandler : MonoBehaviour
         }
     }
 
+    // used GPT for the splitting mechanism cuz who actually knows how to split an asteroid bruh
     private void SplitAsteroid(GameObject asteroid)
     {
-        // Assuming you want to split the asteroid into smaller pieces
-        Vector3 position = asteroid.transform.position;
-        Vector3 scale = asteroid.transform.localScale;
+        Asteroid asteroidComponent = asteroid.GetComponent<Asteroid>();
 
-        // Instantiate two smaller asteroids
-        GameObject asteroid1 = Instantiate(asteroidPrefab, position + Vector3.left * 0.5f, Quaternion.identity);
-        GameObject asteroid2 = Instantiate(asteroidPrefab, position + Vector3.right * 0.5f, Quaternion.identity);
+        if (asteroidComponent != null)
+        {
+            Vector3 position = asteroid.transform.position;
+            Vector3 scale = asteroid.transform.localScale * 0.5f;
 
-        // Reduce the size of the new asteroids (adjust based on design)
-        asteroid1.transform.localScale = scale * 0.5f;
-        asteroid2.transform.localScale = scale * 0.5f;
+            if (scale.x > 0.1f)
+            {
+                // Instantiate two smaller asteroids
+                CreateSplitAsteroid(position + Vector3.left * 0.5f, scale);
+                CreateSplitAsteroid(position + Vector3.right * 0.5f, scale);
+            }
 
-        // Apply random force to scatter the asteroids
-        Rigidbody2D rb1 = asteroid1.GetComponent<Rigidbody2D>();
-        Rigidbody2D rb2 = asteroid2.GetComponent<Rigidbody2D>();
-        rb1.AddForce(Vector2.left * Random.Range(1f, 3f), ForceMode2D.Impulse);
-        rb2.AddForce(Vector2.right * Random.Range(1f, 3f), ForceMode2D.Impulse);
+            // Destroy the original asteroid
+            Destroy(asteroid);
+        }
+    }
 
-        // Destroy the original asteroid
-        Destroy(asteroid);
+    private void CreateSplitAsteroid(Vector3 position, Vector3 scale)
+    {
+        GameObject newAsteroid = Instantiate(asteroidPrefab, position, Quaternion.identity);
+        newAsteroid.transform.localScale = scale;
+
+        // Assign random velocity to new asteroids
+        Asteroid asteroidComponent = newAsteroid.GetComponent<Asteroid>();
+        if (asteroidComponent != null)
+        {
+            Vector2 randomVelocity = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
+            asteroidComponent.SetVelocity(randomVelocity);
+        }
     }
 }

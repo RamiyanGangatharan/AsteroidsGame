@@ -11,5 +11,14 @@ public class Asteroid : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         rigidBody.gravityScale = GRAVITY_DISABLED;
+
+        // Add random rotation for the asteroid
+        float randomTorque = Random.Range(-rotationSpeed, rotationSpeed);
+        rigidBody.AddTorque(randomTorque);
+    }
+
+    public void SetVelocity(Vector2 velocity)
+    {
+        rigidBody.linearVelocity = velocity;
     }
 }

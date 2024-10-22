@@ -19,7 +19,7 @@ public class AsteroidGraphic : MonoBehaviour
         for (int i = 0; i <= VERTICES; i++)
         {
             float angle = i * Mathf.PI * 2 / VERTICES;      // Evenly spaced angles
-            float radius = Random.Range(0.1f, 0.9f);        // Random Radius
+            float radius = Random.Range(0.4f, 0.6f);        // Random Radius
 
             // Polar to Cartesian Coordinate Conversion
             float x = Mathf.Cos(angle) * radius * scaleFactor;
