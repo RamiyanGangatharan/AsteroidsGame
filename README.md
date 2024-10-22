@@ -57,6 +57,15 @@ mechanics. This project is an ongoing learning experience, with plans for contin
 
 # Development Log
 
+### October 22, 2024: Asteroids
+#### Main Objectives:
+- Implement asteroid graphics
+- Implement asteroid mechanics
+    - Spawner
+    - Collider
+        - Asteroid Splitting system when hit 
+    - Physics
+
 ### October 19, 2024: Reading Week
 #### Main Objectives:
 - Implement the shooting mechanic for the player
