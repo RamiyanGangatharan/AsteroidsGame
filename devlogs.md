@@ -18,7 +18,7 @@
 ---
 
 ## **PROJECT OVERVIEW**
-This document tracks the development of an Asteroids-inspired 2D game using Unity Engine. The project is divided into well-defined stages to ensure a structured approach, with room for advanced features if time permits.  
+This document tracks the development of an Asteroids-inspired 2D game using Unity Engine. 
 
 ---
 
