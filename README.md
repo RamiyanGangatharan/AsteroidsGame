@@ -2,6 +2,8 @@
 
 This is a simplified version of the classic *Asteroids* game, developed using Unity. The project focuses on creating a fun, small-scale 2D space shooter with minimal complexity.
 
+please refer to `devlogs.md` for any details from development.
+
 ## Features
 
 - **Player-controlled spaceship**: Move, rotate, and shoot.
