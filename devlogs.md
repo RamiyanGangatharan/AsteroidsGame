@@ -43,6 +43,8 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 | Add Player Colliders and Rigidbody         | ⬜ Not Started | TBD    |                               |
 | Implement Screen Wrapping for the Player   | ⬜ Not Started | TBD    |                               |
 
+#### Stage Notes:
+
 ---
 
 ### **Stage II: Basic Gameplay (0%)**
@@ -57,6 +59,8 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 | Detect and Handle Asteroid-Bullet Collisions| ⬜ Not Started | TBD   |                               |
 | Detect and Handle Asteroid-Ship Collisions | ⬜ Not Started | TBD    |                               |
 
+#### Stage Notes:
+
 ---
 
 ### **Stage III: Gameplay Loop (0%)**
@@ -65,6 +69,8 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 | Implement Asteroid Splitting               | ⬜ Not Started | TBD    |                               |
 | Add a Lives System                         | ⬜ Not Started | TBD    |                               |
 | Create a Game Management System            | ⬜ Not Started | TBD    | Restart, Score, Pause         |
+
+#### Stage Notes:
 
 ---
 
@@ -76,6 +82,8 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 | Display Scores and Lives on Screen         | ⬜ Not Started | TBD    |                               |
 | Add Sound Effects                          | ⬜ Not Started | TBD    | Shooting, Collisions          |
 
+#### Stage Notes:
+
 ---
 
 ### **Stage V: Testing & Debugging (0%)**
@@ -84,6 +92,8 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 | Test All Mechanics                         | ⬜ Not Started | TBD   |                               |
 | Fix Edge Cases                             | ⬜ Not Started | TBD   | Screen Wrapping, Collisions   |
 
+#### Stage Notes:
+
 ---
 
 ### **Stage VI: Advanced Features (if time permits)**
@@ -91,6 +101,8 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 |--------------------------------------------|--------------|---------------------|-------------------------------|
 | Add Power-Ups                              | ⬜ Not Started | TBD   | Shields, Multi-Shot, Speed    |
 | Implement High-Score Tracking              | ⬜ Not Started | TBD   |                               |
+
+#### Stage Notes:
 
 ---
 
