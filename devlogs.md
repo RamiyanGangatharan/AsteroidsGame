@@ -109,8 +109,6 @@ _note: dates are formatted as YYYY-MM-DD_
 ---
 
 ## **LEARNING AND REFLECTIONS**
-- **Challenges**: Encountered issues setting the proper Unity project template but resolved it by selecting the 2D Core option.  
-- **Improvements for Next Project**: Begin with pre-made templates to save time.
 
 ---
 
@@ -122,5 +120,4 @@ _note: dates are formatted as YYYY-MM-DD_
 ---
 
 ## **ACKNOWLEDGMENTS**
-- Asset Sources: Free spaceship sprite from [Website/Artist Name].  
-- Unity Documentation: Referenced UI Toolkit setup.  
+- list sources here
