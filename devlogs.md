@@ -37,60 +37,60 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 | Unity Project Setup                        | ✅ Completed  | December 28, 2024   |                               |
 | Create 2D Scene with a Black Background    | ✅ Completed  | December 28, 2024   |                               |
 | Create a Functioning Main Menu             | 🚧 In Progress | January 5, 2025     | Using UI Toolkit              |
-| Create a Functioning Game Over Screen      | ⬜ Not Started | January 10, 2025    |                               |
-| Design and Add a Spaceship Sprite          | ⬜ Not Started | January 12, 2025    | Researching free assets       |
-| Implement Player Movement                  | ⬜ Not Started | January 14, 2025    | Forward thrust and rotation   |
-| Add Player Colliders and Rigidbody         | ⬜ Not Started | January 15, 2025    |                               |
-| Implement Screen Wrapping for the Player   | ⬜ Not Started | January 16, 2025    |                               |
+| Create a Functioning Game Over Screen      | ⬜ Not Started | TBD    |                               |
+| Design and Add a Spaceship Sprite          | ⬜ Not Started | TBD    | Researching free assets       |
+| Implement Player Movement                  | ⬜ Not Started | TBD    | Forward thrust and rotation   |
+| Add Player Colliders and Rigidbody         | ⬜ Not Started | TBD    |                               |
+| Implement Screen Wrapping for the Player   | ⬜ Not Started | TBD    |                               |
 
 ---
 
 ### **Stage II: Basic Gameplay (0%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
-| Implement Shooting Mechanics               | ⬜ Not Started | January 20, 2025    |                               |
-| Destroy Bullets Leaving Camera View        | ⬜ Not Started | January 21, 2025    |                               |
-| Add Asteroids                              | ⬜ Not Started | January 23, 2025    |                               |
-| Create Asteroid Sprite                     | ⬜ Not Started | January 22, 2025    |                               |
-| Make Asteroids Move on Random Trajectories | ⬜ Not Started | January 23, 2025    |                               |
-| Implement Collision Detection              | ⬜ Not Started | January 25, 2025    |                               |
-| Detect and Handle Asteroid-Bullet Collisions| ⬜ Not Started | January 26, 2025   |                               |
-| Detect and Handle Asteroid-Ship Collisions | ⬜ Not Started | January 26, 2025    |                               |
+| Implement Shooting Mechanics               | ⬜ Not Started | TBD    |                               |
+| Destroy Bullets Leaving Camera View        | ⬜ Not Started | TBD    |                               |
+| Add Asteroids                              | ⬜ Not Started | TBD    |                               |
+| Create Asteroid Sprite                     | ⬜ Not Started | TBD    |                               |
+| Make Asteroids Move on Random Trajectories | ⬜ Not Started | TBD    |                               |
+| Implement Collision Detection              | ⬜ Not Started | TBD    |                               |
+| Detect and Handle Asteroid-Bullet Collisions| ⬜ Not Started | TBD   |                               |
+| Detect and Handle Asteroid-Ship Collisions | ⬜ Not Started | TBD    |                               |
 
 ---
 
 ### **Stage III: Gameplay Loop (0%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
-| Implement Asteroid Splitting               | ⬜ Not Started | January 28, 2025    |                               |
-| Add a Lives System                         | ⬜ Not Started | January 30, 2025    |                               |
-| Create a Game Management System            | ⬜ Not Started | February 1, 2025    | Restart, Score, Pause         |
+| Implement Asteroid Splitting               | ⬜ Not Started | TBD    |                               |
+| Add a Lives System                         | ⬜ Not Started | TBD    |                               |
+| Create a Game Management System            | ⬜ Not Started | TBD    | Restart, Score, Pause         |
 
 ---
 
 ### **Stage IV: Visuals & Polish (0%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
-| Add Particle Effects for Asteroid Hits     | ⬜ Not Started | February 5, 2025    |                               |
-| Add Visual Effects for Spaceship Damage    | ⬜ Not Started | February 6, 2025    |                               |
-| Display Scores and Lives on Screen         | ⬜ Not Started | February 7, 2025    |                               |
-| Add Sound Effects                          | ⬜ Not Started | February 8, 2025    | Shooting, Collisions          |
+| Add Particle Effects for Asteroid Hits     | ⬜ Not Started | TBD    |                               |
+| Add Visual Effects for Spaceship Damage    | ⬜ Not Started | TBD    |                               |
+| Display Scores and Lives on Screen         | ⬜ Not Started | TBD    |                               |
+| Add Sound Effects                          | ⬜ Not Started | TBD    | Shooting, Collisions          |
 
 ---
 
 ### **Stage V: Testing & Debugging (0%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
-| Test All Mechanics                         | ⬜ Not Started | February 10, 2025   |                               |
-| Fix Edge Cases                             | ⬜ Not Started | February 12, 2025   | Screen Wrapping, Collisions   |
+| Test All Mechanics                         | ⬜ Not Started | TBD   |                               |
+| Fix Edge Cases                             | ⬜ Not Started | TBD   | Screen Wrapping, Collisions   |
 
 ---
 
 ### **Stage VI: Advanced Features (if time permits)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
-| Add Power-Ups                              | ⬜ Not Started | February 15, 2025   | Shields, Multi-Shot, Speed    |
-| Implement High-Score Tracking              | ⬜ Not Started | February 16, 2025   |                               |
+| Add Power-Ups                              | ⬜ Not Started | TBD   | Shields, Multi-Shot, Speed    |
+| Implement High-Score Tracking              | ⬜ Not Started | TBD   |                               |
 
 ---
 
