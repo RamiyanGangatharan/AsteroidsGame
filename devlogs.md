@@ -1,9 +1,9 @@
 # **Asteroids Game Development Log**
 #### _A 2D game inspired by the classic Asteroids, developed in Unity._
 
-**Developer**: Ramiyan Gangatharan
-**Start Date**: December 27, 2024  
-**Last Updated**: December 28, 2024  
+**Developer**: Ramiyan Gangatharan <br>
+**Start Date**: December 27, 2024  <br>
+**Last Updated**: December 28, 2024  <br>
 
 ---
 
