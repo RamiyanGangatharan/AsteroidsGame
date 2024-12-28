@@ -1,79 +1,93 @@
-# Asteroids Game
+# **Asteroids Game**
 
-This is a simplified version of the classic *Asteroids* game, developed using Unity. The project focuses on creating a fun, small-scale 2D space shooter with minimal complexity.
+A simplified version of the classic *Asteroids* game, developed using Unity. This project focuses on creating a fun, small-scale 2D space shooter with minimal complexity.  
 
-please refer to `devlogs.md` for any details from development.
+For detailed development notes, please refer to [`devlogs.md`](./devlogs.md).  
 
-## Features
+---
 
-- **Player-controlled spaceship**: Move, rotate, and shoot.
+## **Features**
+
+- **Player-Controlled Spaceship**: Navigate, rotate, and shoot asteroids.
 - **Asteroids**: Large asteroids split into smaller ones when hit.
-- **Shooting mechanics**: Fire projectiles to destroy asteroids.
-- **Screen wrapping**: Objects reappear on the opposite edge of the screen.
-- **Simple score system**: Points are earned for destroying asteroids (optional).
+- **Shooting Mechanics**: Fire projectiles to destroy asteroids.
+- **Screen Wrapping**: Objects wrap around the edges of the screen.
+- **Future Additions**: A scoring system and UI enhancements.
 
-## How to Play
+---
 
-1. **Controls**:
-   - Use the arrow keys to rotate and thrust the spaceship.
-   - Press the spacebar to shoot.
-2. **Objective**:
-   - Destroy all asteroids without crashing into them.
-   - Large asteroids split into smaller ones, increasing the challenge.
+## **How to Play**
 
-## Project Structure
+### **Controls**
+- **Movement**: Use the arrow keys to rotate and thrust the spaceship.
+- **Shooting**: Press the spacebar to shoot bullets.
 
-### Assets
+### **Objective**
+- Destroy all asteroids while avoiding collisions.
+- Large asteroids split into smaller fragments, making the challenge progressively harder.
+
+---
+
+## **Project Structure**
+
+### **Folders**
 - **Scenes**:
-  - `GameScene`: The main gameplay scene.
+  - `GameScene`: The primary gameplay scene.
 - **Scripts**:
-  - `PlayerController`: Handles player movement and shooting.
-  - `AsteroidBehavior`: Handles asteroid movement and splitting.
+  - `PlayerController.cs`: Manages player movement and shooting.
+  - `AsteroidBehavior.cs`: Handles asteroid movement and splitting.
 - **Prefabs**:
-  - `Player`: The player spaceship.
-  - `Asteroid`: Large and smaller asteroids.
-  - `Bullet`: Projectiles fired by the player.
+  - `Player`: The spaceship prefab.
+  - `Asteroid`: Prefabs for large and small asteroids.
+  - `Bullet`: Prefab for projectiles.
 - **Sprites**:
-  - Placeholder sprites for the spaceship, asteroids, and bullets.
+  - Placeholder assets for spaceship, asteroids, and bullets.
 
-### Scripts Overview
+### **Scripts Overview**
+#### `PlayerController.cs`
+- Handles player movement (rotation, thrust) and shooting mechanics.
 
-#### PlayerController.cs
-Manages the player's movement and shooting mechanics.
+#### `AsteroidBehavior.cs`
+- Manages asteroid movement, splitting logic, and interactions with bullets.
 
-#### AsteroidBehavior.cs
-Controls the movement of asteroids, their splitting behavior, and interactions with bullets.
+---
 
-### Key Mechanics
+## **Key Mechanics**
 
-- **Player Movement**:
-  - Forward thrust and rotation are controlled via `Rigidbody2D` physics.
-- **Shooting**:
-  - Bullets are instantiated at the spaceship's position and move forward.
-- **Asteroid Splitting**:
-  - When a large asteroid is hit, it splits into smaller ones (if available).
-- **Screen Wrapping**:
-  - Objects that leave the screen reappear on the opposite side.
+- **Player Movement**: Controlled with `Rigidbody2D` for realistic physics. Includes forward thrust and rotation.
+- **Shooting**: Instantiates bullets that travel forward from the spaceship's position.
+- **Asteroid Splitting**: Large asteroids split into smaller fragments upon being hit.
+- **Screen Wrapping**: Objects exiting one edge of the screen reappear on the opposite side.
 
-## Requirements
+---
 
-- Unity Editor (Version 2020.3 or newer recommended)
-- Basic knowledge of Unity and C#
+## **Requirements**
 
-## Setup Instructions
+- Unity Editor (2020.3 LTS or newer recommended).
+- Basic knowledge of Unity and C# scripting.
+
+---
+
+## **Setup Instructions**
 
 1. Clone or download this repository.
 2. Open the project in Unity.
 3. Load the `GameScene` from the `Scenes` folder.
-4. Play the game by pressing the Play button in Unity.
+4. Press the **Play** button in Unity to start the game.
 
-## Future Improvements
+---
 
-- Add a scoring system with UI.
-- Implement lives and game-over logic.
-- Introduce power-ups (e.g., shields, multi-shot).
+## **Future Improvements**
+
+- Implement a scoring system with an on-screen UI.
+- Add a lives system and game-over functionality.
+- Introduce power-ups like shields or multi-shot upgrades.
 - Add sound effects and background music.
+- Include high-score tracking and leaderboard features.
 
-## License
+---
 
-This project is open-source and available for personal or educational use.
+## **License**
+
+This project is open-source and available for personal or educational use.  
+Feel free to modify or expand upon it while crediting the original source.
