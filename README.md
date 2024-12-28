@@ -81,8 +81,8 @@ This project is open-source and available for personal or educational use.
 ### **Game Plan**
 
 #### **Stage I: Core Setup**
-- [x] Unity Project Setup
-- [x] Create 2D Scene with a black background
+- [x] Unity Project Setup - [date complete: December 28 2024]
+- [x] Create 2D Scene with a black background - [date complete: December 28 2024]
 - [ ] Create a functioning main menu
 - [ ] Create a functioning Game Over screen
 - [ ] Design and add a spaceship sprite
