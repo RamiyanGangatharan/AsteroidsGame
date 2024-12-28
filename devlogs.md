@@ -1,84 +1,112 @@
-# **DEVELOPER LOGS**
+# **Asteroids Game Development Log**
+#### _A 2D game inspired by the classic Asteroids, developed in Unity._
 
-## **Project Overview**
-This log tracks the development of an Asteroids-inspired 2D game using Unity Engine. Each stage is designed to ensure a structured and incremental approach to game creation.
-
----
-
-## **Progress Summary**
-### Last Update: December 28, 2024
-- Completed Unity Project Setup.
-- Created a basic 2D scene with a black background.
+**Developer**: [Your Name]  
+**Start Date**: December 28, 2024  
+**Last Updated**: December 28, 2024  
 
 ---
 
-## **Game Plan**
-
-### **Stage I: Core Setup**
-- [x] Unity Project Setup - **Completed: December 28, 2024**
-  - **Notes/Challenges**: Faced minor issues setting the proper project template; resolved by choosing the 2D Core option in Unity Hub.
-- [x] Create 2D Scene with a black background - **Completed: December 28, 2024**
-- [ ] Create a functioning main menu *(target: January 5, 2025)*.
-  - **Notes**: Currently working on layout design with UI Toolkit.
-- [ ] Create a functioning Game Over screen.
-- [ ] Design and add a spaceship sprite.
-- [ ] Implement player movement (forward thrust and rotation).
-- [ ] Add player colliders and rigidbody components.
-- [ ] Implement screen wrapping for the player.
+## **Table of Contents**
+1. [Project Overview](#project-overview)
+2. [Progress Summary](#progress-summary)
+3. [Game Plan](#game-plan)
+4. [Learning and Reflections](#learning-and-reflections)
+5. [Visual Progress](#visual-progress)
+6. [Acknowledgments](#acknowledgments)
 
 ---
 
-### **Stage II: Basic Gameplay**
-- [ ] Implement shooting mechanics.
-  - [ ] Destroy bullets that leave the camera view.
-- [ ] Add asteroids:
-  - [ ] Create an asteroid sprite.
-  - [ ] Make asteroids move on random trajectories.
-- [ ] Implement collision detection:
-  - [ ] Detect and handle asteroid-bullet collisions.
-  - [ ] Detect and handle asteroid-spaceship collisions.
+## **PROJECT OVERVIEW**
+This document tracks the development of an Asteroids-inspired 2D game using Unity Engine. The project is divided into well-defined stages to ensure a structured approach, with room for advanced features if time permits.  
 
 ---
 
-### **Stage III: Gameplay Loop**
-- [ ] Implement asteroid splitting upon destruction.
-- [ ] Add a lives system.
-- [ ] Create a game management system:
-  - [ ] Restart the game after all lives are lost.
-  - [ ] Track and display both score and lives.
-  - [ ] Add pause/unpause and restart functionality.
+## **PROGRESS SUMMARY**
+### Current Status: **Stage I (Core Setup)** - *60% Complete*  
+- **Completed**: Unity project setup, 2D scene with black background.
+- **In Progress**: Designing the main menu.  
 
 ---
 
-### **Stage IV: Visuals & Polish**
-- [ ] Add simple particle effects for asteroid hits and splits.
-- [ ] Add visual effects when the spaceship takes damage.
-- [ ] Display scores and lives on the screen.
-- [ ] Add sound effects for shooting, collisions, and explosions.
+## **GAME PLAN**
+
+### **Stage I: Core Setup (60%)**
+| Task                                       | Status       | Target Date         | Notes                         |
+|--------------------------------------------|--------------|---------------------|-------------------------------|
+| Unity Project Setup                        | ✅ Completed  | December 28, 2024   |                               |
+| Create 2D Scene with a Black Background    | ✅ Completed  | December 28, 2024   |                               |
+| Create a Functioning Main Menu             | 🚧 In Progress | January 5, 2025     | Using UI Toolkit              |
+| Create a Functioning Game Over Screen      | ⬜ Not Started | January 10, 2025    |                               |
+| Design and Add a Spaceship Sprite          | ⬜ Not Started | January 12, 2025    | Researching free assets       |
+| Implement Player Movement                  | ⬜ Not Started | January 14, 2025    | Forward thrust and rotation   |
+| Add Player Colliders and Rigidbody         | ⬜ Not Started | January 15, 2025    |                               |
+| Implement Screen Wrapping for the Player   | ⬜ Not Started | January 16, 2025    |                               |
 
 ---
 
-### **Stage V: Finishing Touches - Testing**
-- [ ] Test and debug all mechanics.
-- [ ] Fix edge cases (e.g., improper screen wrapping, collision issues).
+### **Stage II: Basic Gameplay (0%)**
+| Task                                       | Status       | Target Date         | Notes                         |
+|--------------------------------------------|--------------|---------------------|-------------------------------|
+| Implement Shooting Mechanics               | ⬜ Not Started | January 20, 2025    |                               |
+| Destroy Bullets Leaving Camera View        | ⬜ Not Started | January 21, 2025    |                               |
+| Add Asteroids                              | ⬜ Not Started | January 23, 2025    |                               |
+| Create Asteroid Sprite                     | ⬜ Not Started | January 22, 2025    |                               |
+| Make Asteroids Move on Random Trajectories | ⬜ Not Started | January 23, 2025    |                               |
+| Implement Collision Detection              | ⬜ Not Started | January 25, 2025    |                               |
+| Detect and Handle Asteroid-Bullet Collisions| ⬜ Not Started | January 26, 2025   |                               |
+| Detect and Handle Asteroid-Ship Collisions | ⬜ Not Started | January 26, 2025    |                               |
+
+---
+
+### **Stage III: Gameplay Loop (0%)**
+| Task                                       | Status       | Target Date         | Notes                         |
+|--------------------------------------------|--------------|---------------------|-------------------------------|
+| Implement Asteroid Splitting               | ⬜ Not Started | January 28, 2025    |                               |
+| Add a Lives System                         | ⬜ Not Started | January 30, 2025    |                               |
+| Create a Game Management System            | ⬜ Not Started | February 1, 2025    | Restart, Score, Pause         |
+
+---
+
+### **Stage IV: Visuals & Polish (0%)**
+| Task                                       | Status       | Target Date         | Notes                         |
+|--------------------------------------------|--------------|---------------------|-------------------------------|
+| Add Particle Effects for Asteroid Hits     | ⬜ Not Started | February 5, 2025    |                               |
+| Add Visual Effects for Spaceship Damage    | ⬜ Not Started | February 6, 2025    |                               |
+| Display Scores and Lives on Screen         | ⬜ Not Started | February 7, 2025    |                               |
+| Add Sound Effects                          | ⬜ Not Started | February 8, 2025    | Shooting, Collisions          |
+
+---
+
+### **Stage V: Testing & Debugging (0%)**
+| Task                                       | Status       | Target Date         | Notes                         |
+|--------------------------------------------|--------------|---------------------|-------------------------------|
+| Test All Mechanics                         | ⬜ Not Started | February 10, 2025   |                               |
+| Fix Edge Cases                             | ⬜ Not Started | February 12, 2025   | Screen Wrapping, Collisions   |
 
 ---
 
 ### **Stage VI: Advanced Features (if time permits)**
-- [ ] Add power-ups (e.g., shields, multi-shot, speed boost).
-- [ ] Implement high-score tracking and display.
+| Task                                       | Status       | Target Date         | Notes                         |
+|--------------------------------------------|--------------|---------------------|-------------------------------|
+| Add Power-Ups                              | ⬜ Not Started | February 15, 2025   | Shields, Multi-Shot, Speed    |
+| Implement High-Score Tracking              | ⬜ Not Started | February 16, 2025   |                               |
 
 ---
 
-## **Learning and Reflections**
-- **New Concepts Learned**: Documenting as the project progresses.
-- **Improvements for Next Project**: Focus on modular development from the start.
+## **LEARNING AND REFLECTIONS**
+- **Challenges**: Encountered issues setting the proper Unity project template but resolved it by selecting the 2D Core option.  
+- **Improvements for Next Project**: Begin with pre-made templates to save time.
 
 ---
 
-## **Visual Progress**
-- Screenshots and updates will be included here to showcase milestones visually.
+## **VISUAL PROGRESS**
+### Current Screenshots:
+1. **2D Scene with Black Background**  
+   *(Insert image or link to image)*  
 
 ---
 
-_Last Updated: December 28, 2024_
+## **ACKNOWLEDGMENTS**
+- Asset Sources: Free spaceship sprite from [Website/Artist Name].  
+- Unity Documentation: Referenced UI Toolkit setup.  
