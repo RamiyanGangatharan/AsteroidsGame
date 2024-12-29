@@ -44,8 +44,8 @@ _note: dates are formatted as YYYY-MM-DD_
 | Create a Functioning Pause Screen      | ✅ Completed | 2024/12/29    |                               |
 | Create a Functioning Game Over Screen      | ✅ Completed | 2024/12/29    |                               |
 | Design and Add a Spaceship Sprite          | ✅ Completed | 2024/12/29    | Researching free assets       |
-| Implement Player Movement                  | ⬜ Not Started | TBD    | Forward thrust and rotation   |
-| Add Player Colliders and Rigidbody         | ⬜ Not Started | TBD    |                               |
+| Implement Player Movement                  | ✅ Completed | TBD    | Forward thrust and rotation   |
+| Add Player Colliders and Rigidbody         | ✅ Completed | TBD    |                               |
 | Implement Screen Wrapping for the Player   | ⬜ Not Started | TBD    |                               |
 
 #### Stage Notes:
