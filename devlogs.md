@@ -41,9 +41,9 @@ _note: dates are formatted as YYYY-MM-DD_
 | Unity Project Setup                        | ✅ Completed  | 2024/12/28   |                               |
 | Create 2D Scene with a Black Background    | ✅ Completed  | 2024/12/28   |                               |
 | Create a Functioning Main Menu             | ✅ Completed | 2024/12/29     | Using UI Toolkit              |
-| Create a Functioning Pause Screen      | 🚧 In Progress | 2024/12/29    |                               |
-| Create a Functioning Game Over Screen      | 🚧 In Progress | 2024/12/29    |                               |
-| Design and Add a Spaceship Sprite          | 🚧 In Progress | 2024/12/29    | Researching free assets       |
+| Create a Functioning Pause Screen      | ✅ Completed | 2024/12/29    |                               |
+| Create a Functioning Game Over Screen      | ✅ Completed | 2024/12/29    |                               |
+| Design and Add a Spaceship Sprite          | ✅ Completed | 2024/12/29    | Researching free assets       |
 | Implement Player Movement                  | ⬜ Not Started | TBD    | Forward thrust and rotation   |
 | Add Player Colliders and Rigidbody         | ⬜ Not Started | TBD    |                               |
 | Implement Screen Wrapping for the Player   | ⬜ Not Started | TBD    |                               |
