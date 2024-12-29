@@ -23,11 +23,7 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 ---
 
 ## **PROGRESS SUMMARY**
-### Current Status: **Stage I (Core Setup)** - *33% Complete*  
-- **Completed**: 
-  - Unity project setup, 2D scene with black background.
-  - Main Menu Functionality
-- **In Progress**: Pause & Game Over Screen
+### Current Status: **Stage I (Core Setup)** - *100% Complete*  
 
 ---
 
@@ -35,7 +31,7 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 
 _note: dates are formatted as YYYY-MM-DD_
 
-### **Stage I: Core Setup (33%)**
+### **Stage I: Core Setup (100%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
 | Unity Project Setup                        | ✅ Completed  | 2024/12/28   |                               |
@@ -44,11 +40,16 @@ _note: dates are formatted as YYYY-MM-DD_
 | Create a Functioning Pause Screen      | ✅ Completed | 2024/12/29    |                               |
 | Create a Functioning Game Over Screen      | ✅ Completed | 2024/12/29    |                               |
 | Design and Add a Spaceship Sprite          | ✅ Completed | 2024/12/29    | Researching free assets       |
-| Implement Player Movement                  | ✅ Completed | TBD    | Forward thrust and rotation   |
-| Add Player Colliders and Rigidbody         | ✅ Completed | TBD    |                               |
-| Implement Screen Wrapping for the Player   | ⬜ Not Started | TBD    |                               |
+| Implement Player Movement                  | ✅ Completed | 2024/12/29    | Forward thrust and rotation   |
+| Add Player Colliders and Rigidbody         | ✅ Completed | 2024/12/29    |                               |
+| Implement Screen Wrapping for the Player   | ✅ Completed | 2024/12/29    |                               |
 
 #### Stage Notes:
+- Understanding Physics: Grasping the physics concepts in Unity proved to be challenging as I have never taken a physics class, but I got information from ChatGPT, which helped clarify my understanding of the mechanics involved.
+
+- Screen Wrapping: I successfully implemented screen wrapping using orthographic coordinates, though I’m still unfamiliar with what orthographic projection entails. This feature allows my character to seamlessly exit one side of the screen and reappear on the opposite side. However, I noticed that my character is now limited to the bounds of the camera view which is a good thing.
+
+- Menu Creation: Creating menus turned out to be more straightforward than I expected. By leveraging event listeners and reusing several functions, I was able to streamline the process of returning to specific menus, resulting in a more efficient workflow.
 
 ---
 
