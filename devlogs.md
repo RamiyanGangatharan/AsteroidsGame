@@ -115,12 +115,7 @@ _note: dates are formatted as YYYY-MM-DD_
 
 ---
 
-## **VISUAL PROGRESS**
-### Current Screenshots:
-1. **2D Scene with Black Background**  
-   *(Insert image or link to image)*  
-
----
-
 ## **ACKNOWLEDGMENTS**
-- list sources here
+- [Asteroid Sprite](https://millionthvector.blogspot.com/p/free-sprites.html)
+- [OpenGameArt.org](https://opengameart.org/)
+- [Projectile Tutorial](https://youtu.be/8TqY6p-PRcs)
