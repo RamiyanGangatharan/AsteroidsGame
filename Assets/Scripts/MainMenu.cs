@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,15 +11,8 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         PlayButton.onClick.AddListener(PlayGame);
+        ExitButton.onClick.AddListener(ExitGame);
     }
-    void Update()
-    {
-        
-    }
-
-    private void PlayGame()
-    {
-        Debug.Log("Play Button has been clicked.");
-        SceneManager.LoadScene(1);
-    }
+    void PlayGame() { SceneManager.LoadScene(1); }
+    void ExitGame() { Environment.Exit(0); }
 }
