@@ -33,14 +33,14 @@ This document tracks the development of an Asteroids-inspired 2D game using Unit
 
 _note: dates are formatted as YYYY-MM-DD_
 
-### **Stage I: Core Setup (60%)**
+### **Stage I: Core Setup (43%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
 | Unity Project Setup                        | ✅ Completed  | 2024/12/28   |                               |
 | Create 2D Scene with a Black Background    | ✅ Completed  | 2024/12/28   |                               |
 | Create a Functioning Main Menu             | ✅ Completed | 2024/12/29     | Using UI Toolkit              |
-| Create a Functioning Game Over Screen      | 🚧 In Progress | TBD    |                               |
-| Design and Add a Spaceship Sprite          | ⬜ Not Started | 2024/12/29    | Researching free assets       |
+| Create a Functioning Game Over Screen      | 🚧 In Progress | 2024/12/29    |                               |
+| Design and Add a Spaceship Sprite          | ⬜ Not Started | TBD    | Researching free assets       |
 | Implement Player Movement                  | ⬜ Not Started | TBD    | Forward thrust and rotation   |
 | Add Player Colliders and Rigidbody         | ⬜ Not Started | TBD    |                               |
 | Implement Screen Wrapping for the Player   | ⬜ Not Started | TBD    |                               |
