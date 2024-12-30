@@ -34,15 +34,15 @@ _note: dates are formatted as YYYY-MM-DD_
 ### **Stage I: Core Setup (100%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
-| Unity Project Setup                        | ✅ Completed  | 2024/12/28   |                               |
-| Create 2D Scene with a Black Background    | ✅ Completed  | 2024/12/28   |                               |
-| Create a Functioning Main Menu             | ✅ Completed | 2024/12/29     | Using UI Toolkit              |
-| Create a Functioning Pause Screen      | ✅ Completed | 2024/12/29    |                               |
-| Create a Functioning Game Over Screen      | ✅ Completed | 2024/12/29    |                               |
-| Design and Add a Spaceship Sprite          | ✅ Completed | 2024/12/29    | Researching free assets       |
-| Implement Player Movement                  | ✅ Completed | 2024/12/29    | Forward thrust and rotation   |
-| Add Player Colliders and Rigidbody         | ✅ Completed | 2024/12/29    |                               |
-| Implement Screen Wrapping for the Player   | ✅ Completed | 2024/12/29    |                               |
+| Unity Project Setup                        | ✅ Completed | 2024/12/28 | Using Unity 6.0               |
+| Create 2D Scene with a Black Background    | ✅ Completed | 2024/12/28 |                               |
+| Create a Functioning Main Menu             | ✅ Completed | 2024/12/29 | Using UI Toolkit              |
+| Create a Functioning Pause Screen          | ✅ Completed | 2024/12/29 |                               |
+| Create a Functioning Game Over Screen      | ✅ Completed | 2024/12/29 |                               |
+| Design and Add a Spaceship Sprite          | ✅ Completed | 2024/12/29 | Using free assets             |
+| Implement Player Movement                  | ✅ Completed | 2024/12/29 | Forward thrust and rotation   |
+| Add Player Colliders and Rigidbody         | ✅ Completed | 2024/12/29 | Colliders automatically wrap  |
+| Implement Screen Wrapping for the Player   | ✅ Completed | 2024/12/29 | Screen wrap is camera bound   |
 
 #### Stage Notes:
 - Understanding Physics: Grasping the physics concepts in Unity proved to be challenging as I have never taken a physics class, but I got information from ChatGPT, which helped clarify my understanding of the mechanics involved.
