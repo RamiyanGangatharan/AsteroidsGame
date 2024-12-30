@@ -406,6 +406,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1538107263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1191966204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1191966206}
+  - component: {fileID: 1191966205}
+  m_Layer: 0
+  m_Name: ProjectilePool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1191966205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191966204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06fc30ae84af12e4d86b731a33f3ac66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1269796274}
+  initialPoolSize: 4
+  maxPoolSize: 6
+--- !u!4 &1191966206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191966204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.827337, y: -4.7838454, z: 0.06389834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1269796274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 366271066352179240, guid: e588088dbc014e545bc09d4f0da9f0c2, type: 3}
@@ -423,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ea3146138a14d418cd2a0f287dafaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 2
+  lifetime: 0.1
 --- !u!1001 &1538107251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -645,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8cad2b48d37ef45b1f6ed52d9da343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1269796274}
+  projectilePool: {fileID: 1191966205}
   launchOffset: {fileID: 630906303}
   projectileSpeed: 25
 --- !u!1001 &7261708815050852833
@@ -660,13 +707,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile
       objectReference: {fileID: 0}
+    - target: {fileID: 366271066352179240, guid: e588088dbc014e545bc09d4f0da9f0c2, type: 3}
+      propertyPath: m_TagString
+      value: Projectile
+      objectReference: {fileID: 0}
     - target: {fileID: 8346712696195291043, guid: e588088dbc014e545bc09d4f0da9f0c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.004
+      value: 3.29
       objectReference: {fileID: 0}
     - target: {fileID: 8346712696195291043, guid: e588088dbc014e545bc09d4f0da9f0c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.149
+      value: -6.73
       objectReference: {fileID: 0}
     - target: {fileID: 8346712696195291043, guid: e588088dbc014e545bc09d4f0da9f0c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -716,3 +767,4 @@ SceneRoots:
   - {fileID: 1538107251}
   - {fileID: 484966208}
   - {fileID: 7261708815050852833}
+  - {fileID: 1191966206}

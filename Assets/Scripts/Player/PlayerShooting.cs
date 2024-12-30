@@ -2,36 +2,50 @@
 
 public class PlayerShooting : MonoBehaviour
 {
-    public GameObject projectilePrefab;
-    public Transform launchOffset;
-    public float projectileSpeed = 10f;
+    public ProjectilePool projectilePool; // Reference to the projectile pool
+    public Transform launchOffset; // Position from which to launch projectiles
+    public float projectileSpeed = 10f; // Speed of the projectile
 
-    void Update() { if (Input.GetKeyDown(KeyCode.Space)) { Shoot(); } }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Shoot();
+        }
+    }
 
     void Shoot()
     {
-        if (projectilePrefab == null)
+        if (projectilePool == null)
         {
-            Debug.LogError("Projectile Prefab is not assigned!");
+            Debug.LogError("Projectile Pool is not assigned!");
             return;
         }
 
-        Debug.Log($"Instantiating projectile: {projectilePrefab.name}");
+        GameObject projectile = projectilePool.GetProjectile(); // Get a projectile from the pool
 
-        GameObject projectile = Instantiate(projectilePrefab, launchOffset.position, transform.rotation);
         if (projectile != null)
         {
-            Debug.Log($"Projectile instantiated: {projectile.name}");
-        }
+            // Set the projectile's position and rotation
+            projectile.transform.position = launchOffset.position;
+            projectile.transform.rotation = transform.rotation;
 
-        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.linearVelocity = transform.up * projectileSpeed;
+            // Set the velocity of the projectile using linearVelocity
+            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = transform.up * projectileSpeed;
+            }
+            else
+            {
+                Debug.LogError("Rigidbody2D component not found on Projectile Prefab!");
+            }
+
+            Debug.Log($"Projectile instantiated: {projectile.name}");
         }
         else
         {
-            Debug.LogError("Rigidbody2D component not found on Projectile Prefab!");
+            Debug.LogWarning("No projectiles available in the pool!");
         }
     }
 }
