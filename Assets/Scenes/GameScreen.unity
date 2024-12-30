@@ -222,7 +222,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 195244576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e511b1d2b38f3d4ca03674cd43d43cb, type: 3}
+  m_Script: {fileID: 11500000, guid: ea3babc73e071b44d8748496a68fe4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
@@ -443,6 +443,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5499425557347825803, guid: e141d7d6376f24848b41840d33c4e780, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1538107258}
+    - targetCorrespondingSourceObject: {fileID: 5499425557347825803, guid: e141d7d6376f24848b41840d33c4e780, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1538107261}
   m_SourcePrefab: {fileID: 100100000, guid: e141d7d6376f24848b41840d33c4e780, type: 3}
 --- !u!1 &1538107252 stripped
 GameObject:
@@ -551,12 +554,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1538107252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e58dca652e73d114b83600bf88cbc520, type: 3}
+  m_Script: {fileID: 11500000, guid: 542ac4f068efc1141bc676984401ed0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thrustForce: 5
-  rotationSpeed: 50
-  maxSpeed: 4
+  rotationSpeed: 100
+  maxSpeed: 5
 --- !u!114 &1538107258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,7 +569,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1538107252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29e4f4c8003f874da11f59e91e2b491, type: 3}
+  m_Script: {fileID: 11500000, guid: de8cad2b48d37ef45b1f6ed52d9da343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1538107261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538107252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf39233b9f14a949b6bd97337a6dbbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
