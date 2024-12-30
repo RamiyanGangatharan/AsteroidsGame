@@ -120,3 +120,4 @@ _note: dates are formatted as YYYY-MM-DD_
 - [Asteroid Sprite](https://millionthvector.blogspot.com/p/free-sprites.html)
 - [OpenGameArt.org](https://opengameart.org/)
 - [Projectile Tutorial](https://youtu.be/8TqY6p-PRcs)
+- [Projectile Art](https://opengameart.org/content/3-lasers)
