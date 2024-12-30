@@ -56,7 +56,7 @@ _note: dates are formatted as YYYY-MM-DD_
 ### **Stage II: Basic Gameplay (0%)**
 | Task                                       | Status       | Target Date         | Notes                         |
 |--------------------------------------------|--------------|---------------------|-------------------------------|
-| Implement Shooting Mechanics               | ⬜ Not Started | TBD    |                               |
+| Implement Shooting Mechanics               | Work In Progress | TBD    |                               |
 | Destroy Bullets Leaving Camera View        | ⬜ Not Started | TBD    |                               |
 | Add Asteroids                              | ⬜ Not Started | TBD    |                               |
 | Create Asteroid Sprite                     | ✅ Completed | 2024/12/29    |                               |
