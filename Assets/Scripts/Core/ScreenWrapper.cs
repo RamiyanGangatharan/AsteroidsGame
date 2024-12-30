@@ -3,12 +3,12 @@
 public class ScreenWrapper : MonoBehaviour
 {
     private Camera mainCamera;
-    private Rigidbody2D rb; // Reference to the Rigidbody2D component
+    private Rigidbody2D rb; 
 
     void Start()
     {
         mainCamera = Camera.main;
-        rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component
+        rb = GetComponent<Rigidbody2D>(); 
     }
 
     void Update()

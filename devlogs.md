@@ -59,7 +59,7 @@ _note: dates are formatted as YYYY-MM-DD_
 | Implement Shooting Mechanics               | ⬜ Not Started | TBD    |                               |
 | Destroy Bullets Leaving Camera View        | ⬜ Not Started | TBD    |                               |
 | Add Asteroids                              | ⬜ Not Started | TBD    |                               |
-| Create Asteroid Sprite                     | ⬜ Not Started | TBD    |                               |
+| Create Asteroid Sprite                     | ✅ Completed | 2024/12/29    |                               |
 | Make Asteroids Move on Random Trajectories | ⬜ Not Started | TBD    |                               |
 | Implement Collision Detection              | ⬜ Not Started | TBD    |                               |
 | Detect and Handle Asteroid-Bullet Collisions| ⬜ Not Started | TBD   |                               |
